@@ -2,13 +2,13 @@
   "name": "saeedsamimi",
   "version": "1.0.0",
   "source": "src/index.html",
-  "homepage": "https://saeedsamimi.github.io",
+  "homepage": "https://saeedsamimi.github.io/ReactShow",
+  "private": "true",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build",
-    "build-gh": "parcel build --public-url 'https://saeedsamimi.github.io/'",
-    "predeploy": "npm run build-gh",
-    "deploy": "gh-pages -d dist"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "Microsoft",
   "license": "ISC",
