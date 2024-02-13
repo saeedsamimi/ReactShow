@@ -18,6 +18,7 @@ import linkedInIcon from "../images/socials/linkedin.svg";
 import mediumIcon from "../images/socials/medium.svg";
 import twitterIcon from "../images/socials/twitter.svg";
 import youTubeIcon from "../images/socials/youtube.svg";
+import telegramIcon from "../images/socials/telegram.svg";
 
 /**
  * 💡 Learning resources
@@ -36,6 +37,7 @@ const Footer = (props) => {
     medium,
     name,
     primaryColor,
+    telegram,
     twitter,
     youTube,
   } = props;
@@ -50,7 +52,7 @@ const Footer = (props) => {
         gap: "2.5rem",
         padding: "5rem 0 3rem",
         backgroundColor: primaryColor,
-        width: "100vw"
+        width: "100vw",
       }}
     >
       <div
@@ -103,6 +105,11 @@ const Footer = (props) => {
             <img src={twitterIcon} alt="Twitter" className="socialIcon" />
           </a>
         )}
+        {telegram && (
+          <a href={`https://t.me/${telegram}`} target="_blank" rel="noopener noreferrer">
+            <img src={telegramIcon} alt="Telegram" className="socialIcon" />
+          </a>
+        )}
         {youTube && (
           <a
             href={`https://www.youtube.com/c/${youTube}`}
@@ -113,7 +120,7 @@ const Footer = (props) => {
           </a>
         )}
       </div>
-      <p className="small" style={{ marginTop: 0, color: "white" }}>
+      <p className="small" style={{ marginTop: 0, color: "black" }}>
         Created by {name}
       </p>
     </div>
@@ -135,7 +142,7 @@ Footer.propTypes = {
   primaryColor: PropTypes.string,
   twitter: PropTypes.string,
   youTube: PropTypes.string,
-
+  telegram: PropTypes.string,
 };
 
 export default Footer;

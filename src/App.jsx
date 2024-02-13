@@ -9,19 +9,20 @@ import Portfolio from "./Components/Portfolio";
 import "./styles.css";
 
 const siteProps = {
-  name: "Alexandrie Grenier",
-  title: "Web Designer & Content Creator",
-  email: "alex@example.com",
-  gitHub: "microsoft",
-  instagram: "microsoft",
-  linkedIn: "satyanadella",
+  name: "Saeed Samimi",
+  title: "Web Designer & Front-End Developer",
+  email: "doob.fooy@gmail.com",
+  gitHub: "saeedsamimi",
+  instagram: "",
+  telegram: "saeedsamimi83",
+  linkedIn: "saeed-samimi-9458011b6",
   medium: "",
-  twitter: "microsoft",
-  youTube: "Code",
+  twitter: "",
+  youTube: "",
 };
 
-const primaryColor = "#4E567E";
-const secondaryColor = "#D2F1E4";
+const primaryColor = "#87CEEB";
+const secondaryColor = "#FFFFFF";
 
 const App = () => {
   return (
