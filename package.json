@@ -5,8 +5,8 @@
   "homepage": "https://saeedsamimi.github.io/ReactShow",
   "private": "true",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "parcel",
+    "build": "parcel build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
